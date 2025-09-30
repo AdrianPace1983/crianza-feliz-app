@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "gallery-1",
+      "description": "Una madre acunando a su bebé recién nacido con ternura.",
+      "imageUrl": "https://images.unsplash.com/photo-1570657891791-e39a9d185540?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb3RoZXIlMjBiYWJ5fGVufDB8fHx8MTc1OTE3MzQwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mother baby"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Lactancia materna, un momento de conexión y nutrición.",
+      "imageUrl": "https://images.unsplash.com/photo-1632080209061-c374309539fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb3RoZXIlMjBicmVhc3RmZWVkaW5nfGVufDB8fHx8MTc1OTE4NzQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mother breastfeeding"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Un bebé sonriendo felizmente mientras juega en el suelo.",
+      "imageUrl": "https://images.unsplash.com/photo-1603298624547-e38905ce21d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWJ5JTIwc21pbGluZ3xlbnwwfHx8fDE3NTkyMjc4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby smiling"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Padre e hijo compartiendo un momento especial de juego.",
+      "imageUrl": "https://images.unsplash.com/photo-1564989951309-d4cfecbf1990?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYXRoZXIlMjBzb258ZW58MHx8fHwxNzU5MjUzMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "father son"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Detalle de los pequeños pies de un bebé recién nacido.",
+      "imageUrl": "https://images.unsplash.com/photo-1635862374421-8136eadf2f93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuZXdib3JuJTIwZmVldHxlbnwwfHx8fDE3NTkyNDI3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "newborn feet"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Un bebé durmiendo plácidamente en su cuna.",
+      "imageUrl": "https://images.unsplash.com/photo-1496174742515-d2146dcf8e80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWJ5JTIwc2xlZXBpbmd8ZW58MHx8fHwxNzU5MjUzMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby sleeping"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Porteo seguro y ergonómico, manteniendo al bebé cerca.",
+      "imageUrl": "https://images.unsplash.com/photo-1745261337543-5caf369f5053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmFieSUyMGNhcnJpZXJ8ZW58MHx8fHwxNzU5MjUzMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby carrier"
+    },
+    {
+      "id": "gallery-8",
+      "description": "El desarrollo infantil a través del juego y la exploración.",
+      "imageUrl": "https://images.unsplash.com/photo-1593793373220-2e51e1c31385?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYWJ5JTIwcGxheWluZ3xlbnwwfHx8fDE3NTkxODc0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby playing"
+    }
+  ]
 }
