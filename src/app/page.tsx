@@ -14,7 +14,7 @@ import {
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">¡Bienvenida!</h1>
         <p className="text-muted-foreground">
@@ -23,7 +23,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Card>
+        <Card className="bg-background/80">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Clientes Activos</CardTitle>
             <Users className="h-4 w-4 text-muted-foreground" />
@@ -35,7 +35,7 @@ export default function DashboardPage() {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-background/80">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
               Consultas Pendientes
@@ -49,7 +49,7 @@ export default function DashboardPage() {
             </p>
           </CardContent>
         </Card>
-        <Card>
+        <Card className="bg-background/80">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Próximo Evento</CardTitle>
             <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -61,7 +61,7 @@ export default function DashboardPage() {
             </p>
           </CardContent>
         </Card>
-         <Card>
+         <Card className="bg-background/80">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Bebés Registrados</CardTitle>
             <Baby className="h-4 w-4 text-muted-foreground" />
@@ -76,7 +76,7 @@ export default function DashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-7">
-        <Card className="col-span-1 lg:col-span-4">
+        <Card className="col-span-1 lg:col-span-4 bg-background/80">
           <CardHeader>
             <CardTitle>Consultas Recientes</CardTitle>
             <CardDescription>Un resumen de tus últimas interacciones.</CardDescription>
@@ -98,7 +98,7 @@ export default function DashboardPage() {
             </div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 lg:col-span-3">
+        <Card className="col-span-1 lg:col-span-3 bg-background/80">
           <CardHeader>
             <CardTitle>Nuevos Artículos</CardTitle>
             <CardDescription>Últimos artículos añadidos a la base de conocimiento.</CardDescription>
