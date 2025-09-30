@@ -17,16 +17,18 @@ import {
   BookOpen,
   CalendarDays,
   DollarSign,
+  HeartHandshake,
 } from 'lucide-react';
 import Link from 'next/link';
 
 const links = [
   { href: '/', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/clientes', label: 'Clientes', icon: Users },
+  { href: '/experiencias', label: 'Experiencias', icon: HeartHandshake },
   { href: '/galeria', label: 'Galería', icon: GalleryHorizontal },
   { href: '/consultas', label: 'Consultas', icon: MessageSquare },
   { href: '/articulos', label: 'Artículos', icon: BookOpen },
-  { href: '/eventos', label: 'Eventos', icon: CalendarDays },
+  { href: '/eventos', 'label': 'Eventos', icon: CalendarDays },
   { href: '/precios', label: 'Precios', icon: DollarSign },
 ];
 
