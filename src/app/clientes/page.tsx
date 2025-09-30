@@ -72,7 +72,7 @@ export default function ClientesPage() {
         </div>
         <Dialog>
           <DialogTrigger asChild>
-            <Button>Registrar Cliente</Button>
+            <Button>Regístrese</Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
