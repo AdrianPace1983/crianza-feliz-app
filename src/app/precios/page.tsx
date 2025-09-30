@@ -92,11 +92,11 @@ export default function PreciosPage() {
                                     <div className="space-y-4">
                                         <div>
                                             <h3 className="font-semibold">ALIAS</h3>
-                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">crianza.feliz.mp</p>
+                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">Romina.fermandes 2026</p>
                                         </div>
                                         <div>
                                             <h3 className="font-semibold">CBU</h3>
-                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">0000003100055555555555</p>
+                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">000012546545624</p>
                                         </div>
                                     </div>
                                 </DialogContent>
