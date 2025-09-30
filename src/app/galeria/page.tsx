@@ -20,7 +20,7 @@ export default function GaleriaPage() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {PlaceHolderImages.map((image) => (
-          <Card key={image.id} className="overflow-hidden">
+          <Card key={image.id} className="overflow-hidden group">
             <CardContent className="p-0">
               <div className="aspect-w-4 aspect-h-3">
                 <Image
@@ -28,7 +28,7 @@ export default function GaleriaPage() {
                   alt={image.description}
                   width={600}
                   height={450}
-                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
                   data-ai-hint={image.imageHint}
                 />
               </div>
