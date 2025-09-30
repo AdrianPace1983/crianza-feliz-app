@@ -10,7 +10,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function GaleriaPage() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-background to-accent/50">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Galería de Imágenes</h1>
         <p className="text-muted-foreground">

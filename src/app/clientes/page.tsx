@@ -27,6 +27,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { Card, CardContent } from '@/components/ui/card';
 
 const clients = [
   {
@@ -61,7 +62,7 @@ const clients = [
 
 export default function ClientesPage() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-background to-accent/50">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Clientes</h1>
@@ -157,4 +158,3 @@ export default function ClientesPage() {
     </div>
   );
 }
-import { Card, CardContent } from '@/components/ui/card';

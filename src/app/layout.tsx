@@ -42,7 +42,7 @@ export default function RootLayout({
             </Sidebar>
             <SidebarInset>
               <SiteHeader />
-              <main className="p-4 sm:p-6 lg:p-8">{children}</main>
+              <main className="p-2 sm:p-3 lg:p-4">{children}</main>
             </SidebarInset>
         </SidebarProvider>
         <Toaster />
