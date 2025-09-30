@@ -19,7 +19,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
-import { MoreHorizontal } from 'lucide-react';
+import { MoreHorizontal, FileText } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -105,6 +105,12 @@ export default function ClientesPage() {
                   </Label>
                   <Input id="baby-age" className="col-span-3" />
                 </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="password" className="text-right">
+                    Contraseña
+                  </Label>
+                  <Input id="password" type="password" className="col-span-3" />
+                </div>
               </div>
               <DialogFooter>
                 <Button type="submit">Guardar Cliente</Button>
@@ -123,6 +129,7 @@ export default function ClientesPage() {
                 <TableHead>Edad del Bebé</TableHead>
                 <TableHead>Última Consulta</TableHead>
                 <TableHead>Estado</TableHead>
+                <TableHead>Historia Clínica</TableHead>
                 <TableHead>
                   <span className="sr-only">Acciones</span>
                 </TableHead>
@@ -139,6 +146,35 @@ export default function ClientesPage() {
                     <Badge variant={client.status === 'active' ? 'default' : 'secondary'}>
                       {client.status === 'active' ? 'Activo' : 'Inactivo'}
                     </Badge>
+                  </TableCell>
+                   <TableCell>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline" size="icon">
+                          <FileText className="h-4 w-4" />
+                          <span className="sr-only">Ver Historia Clínica</span>
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-md">
+                        <DialogHeader>
+                          <DialogTitle>Acceso a Historia Clínica</DialogTitle>
+                          <DialogDescription>
+                            Por favor, ingrese la contraseña para ver los detalles.
+                          </DialogDescription>
+                        </DialogHeader>
+                        <div className="grid gap-4 py-4">
+                           <div className="grid grid-cols-4 items-center gap-4">
+                             <Label htmlFor="password-hc" className="text-right">
+                                Contraseña
+                              </Label>
+                              <Input id="password-hc" type="password" className="col-span-3" />
+                           </div>
+                        </div>
+                        <DialogFooter>
+                          <Button type="submit">Confirmar</Button>
+                        </DialogFooter>
+                      </DialogContent>
+                    </Dialog>
                   </TableCell>
                   <TableCell>
                     <DropdownMenu>
