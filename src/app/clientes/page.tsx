@@ -28,6 +28,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 const clients = [
   {
@@ -70,42 +71,47 @@ export default function ClientesPage() {
             Gestiona la información de tus clientes.
           </p>
         </div>
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button>Regístrese</Button>
-          </DialogTrigger>
-          <DialogContent className="sm:max-w-[425px]">
-            <DialogHeader>
-              <DialogTitle>Registrar Nuevo Cliente</DialogTitle>
-              <DialogDescription>
-                Completa la información del nuevo cliente y su bebé.
-              </DialogDescription>
-            </DialogHeader>
-            <div className="grid gap-4 py-4">
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="parent-name" className="text-right">
-                  Padre/Madre
-                </Label>
-                <Input id="parent-name" className="col-span-3" />
+        <div className="flex gap-2">
+          <Link href="/precios" passHref>
+            <Button variant="outline">Ver Precios</Button>
+          </Link>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button>Regístrese</Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px]">
+              <DialogHeader>
+                <DialogTitle>Registrar Nuevo Cliente</DialogTitle>
+                <DialogDescription>
+                  Completa la información del nuevo cliente y su bebé.
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid gap-4 py-4">
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="parent-name" className="text-right">
+                    Padre/Madre
+                  </Label>
+                  <Input id="parent-name" className="col-span-3" />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="baby-name" className="text-right">
+                    Bebé
+                  </Label>
+                  <Input id="baby-name" className="col-span-3" />
+                </div>
+                <div className="grid grid-cols-4 items-center gap-4">
+                  <Label htmlFor="baby-age" className="text-right">
+                    Edad Bebé
+                  </Label>
+                  <Input id="baby-age" className="col-span-3" />
+                </div>
               </div>
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="baby-name" className="text-right">
-                  Bebé
-                </Label>
-                <Input id="baby-name" className="col-span-3" />
-              </div>
-              <div className="grid grid-cols-4 items-center gap-4">
-                <Label htmlFor="baby-age" className="text-right">
-                  Edad Bebé
-                </Label>
-                <Input id="baby-age" className="col-span-3" />
-              </div>
-            </div>
-            <DialogFooter>
-              <Button type="submit">Guardar Cliente</Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
+              <DialogFooter>
+                <Button type="submit">Guardar Cliente</Button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+        </div>
       </div>
       <Card>
         <CardContent>

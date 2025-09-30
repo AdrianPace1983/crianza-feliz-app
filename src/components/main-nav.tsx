@@ -16,6 +16,7 @@ import {
   MessageSquare,
   BookOpen,
   CalendarDays,
+  DollarSign,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -26,6 +27,7 @@ const links = [
   { href: '/consultas', label: 'Consultas', icon: MessageSquare },
   { href: '/articulos', label: 'Artículos', icon: BookOpen },
   { href: '/eventos', label: 'Eventos', icon: CalendarDays },
+  { href: '/precios', label: 'Precios', icon: DollarSign },
 ];
 
 export function MainNav() {
