@@ -1,6 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 const pricingTiers = [
     {
@@ -68,9 +76,31 @@ export default function PreciosPage() {
                             </ul>
                         </CardContent>
                         <CardFooter>
-                            <Button className="w-full" variant={tier.popular ? 'default' : 'outline'}>
-                                Solicitar Consulta
-                            </Button>
+                           <Dialog>
+                                <DialogTrigger asChild>
+                                    <Button className="w-full" variant={tier.popular ? 'default' : 'outline'}>
+                                        Solicitar Consulta
+                                    </Button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-md">
+                                    <DialogHeader>
+                                    <DialogTitle>Datos para la transferencia</DialogTitle>
+                                    <DialogDescription>
+                                        Puedes realizar el pago utilizando los siguientes datos. Una vez hecho, por favor envía el comprobante.
+                                    </DialogDescription>
+                                    </DialogHeader>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <h3 className="font-semibold">ALIAS</h3>
+                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">crianza.feliz.mp</p>
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold">CBU</h3>
+                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">0000003100055555555555</p>
+                                        </div>
+                                    </div>
+                                </DialogContent>
+                            </Dialog>
                         </CardFooter>
                     </Card>
                 ))}
