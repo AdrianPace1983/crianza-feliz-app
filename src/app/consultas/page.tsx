@@ -14,7 +14,7 @@ const clients = [
 
 export default function ConsultasPage() {
   return (
-    <div className="flex h-[calc(100vh-10rem)] flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-background to-accent/50">
+    <div className="flex h-[calc(100vh-10rem)] flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
        <div>
         <h1 className="text-3xl font-bold tracking-tight">Consultas</h1>
         <p className="text-muted-foreground">
