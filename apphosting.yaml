@@ -5,3 +5,12 @@ runConfig:
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
+  # Automatically install dependencies and build the app.
+  # These commands are run on the server and can be customized.
+build:
+  # The command to install dependencies.
+  installCommand: npm install
+  # The command to build the app.
+  buildCommand: npm run build
+# The command to start the app.
+startCommand: npm run start
