@@ -2,13 +2,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const pricingTiers = [
     {
@@ -75,32 +73,31 @@ export default function PreciosPage() {
                                 ))}
                             </ul>
                         </CardContent>
-                        <CardFooter>
-                           <Dialog>
-                                <DialogTrigger asChild>
-                                    <Button className="w-full" variant={tier.popular ? 'default' : 'outline'}>
-                                        Solicitar Consulta
-                                    </Button>
-                                </DialogTrigger>
-                                <DialogContent className="sm:max-w-md">
-                                    <DialogHeader>
-                                    <DialogTitle>Datos para la transferencia</DialogTitle>
-                                    <DialogDescription>
-                                        Puedes realizar el pago utilizando los siguientes datos. Una vez hecho, por favor envía el comprobante.
-                                    </DialogDescription>
-                                    </DialogHeader>
-                                    <div className="space-y-4">
-                                        <div>
-                                            <h3 className="font-semibold">ALIAS</h3>
-                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">Romina.fermandes 2026</p>
+                        <CardFooter className="flex-col items-start p-0">
+                           <Accordion type="single" collapsible className="w-full">
+                                <AccordionItem value="item-1" className="border-t">
+                                    <AccordionTrigger className="w-full p-6 text-center justify-center hover:no-underline">
+                                         <Button className="w-full pointer-events-none" variant={tier.popular ? 'default' : 'outline'}>
+                                            Solicitar Consulta
+                                        </Button>
+                                    </AccordionTrigger>
+                                    <AccordionContent className="p-6 pt-0">
+                                        <div className="space-y-4 text-center">
+                                             <p className="text-sm text-muted-foreground">
+                                                Puedes realizar el pago utilizando los siguientes datos. Una vez hecho, por favor envía el comprobante.
+                                            </p>
+                                            <div>
+                                                <h3 className="font-semibold text-sm">ALIAS</h3>
+                                                <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">Romina.fermandes2026</p>
+                                            </div>
+                                            <div>
+                                                <h3 className="font-semibold text-sm">CBU</h3>
+                                                <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">000012546545624</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h3 className="font-semibold">CBU</h3>
-                                            <p className="text-sm text-muted-foreground bg-muted p-2 rounded-md mt-1">000012546545624</p>
-                                        </div>
-                                    </div>
-                                </DialogContent>
-                            </Dialog>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
                         </CardFooter>
                     </Card>
                 ))}
