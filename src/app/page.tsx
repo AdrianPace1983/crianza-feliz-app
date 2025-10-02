@@ -16,6 +16,7 @@ export default function DashboardPage() {
   return (
     <div className="flex flex-col gap-8 p-4 md:p-6 rounded-lg bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
       <div>
+        <h2 className="text-2xl font-semibold text-primary">Romina Fernandez - Puericultora</h2>
         <h1 className="text-3xl font-bold tracking-tight">¡Bienvenida!</h1>
         <p className="text-muted-foreground">
           Aquí tienes un resumen de tu actividad reciente.
